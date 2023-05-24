@@ -1,3 +1,11 @@
+/*
+ * @Author: aixiaoli
+ * @Email: xiaoli.ai@quarkintl.com
+ * @Description: 功能或页面描述
+ * @Date: 2023-05-24 14:19:14
+ * @LastEditors: aixiaoli
+ * @LastEditTime: 2023-05-24 16:26:39
+ */
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Button } from '@quark-base-plugin/core';
@@ -24,11 +32,13 @@ export const Primary: Story = {
   },
 };
 
-// export const Secondary: Story = {
-//   args: {
-//     label: 'Button',
-//   },
-// };
+export const Success: Story = {
+  args: {
+    fill: 'solid',
+    color: 'success',
+    children: 'sucess'
+  },
+};
 
 // export const Large: Story = {
 //   args: {

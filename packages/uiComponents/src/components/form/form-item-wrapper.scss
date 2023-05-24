@@ -1,0 +1,154 @@
+$classPrefix: 'DefaultFormItemWrapper';
+$classPrefixLao: 'LaoFormItemWrapper';
+
+.#{$classPrefix} {
+  position: relative;
+  border-radius: 8px 8px 8px 8px;
+  border: 1px solid #D3D6D8;
+  min-height: 48px;
+  padding: 10px 6px 10px 14px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  overflow: visible;
+
+  margin-bottom: 20px;
+
+  &.focused {
+    border-color: var(--qk-color-primary);
+    border-width: 1px;
+  }
+
+  &.error {
+    border-color: var(--qk-color-danger);
+  }
+  
+  .#{$classPrefix}-title {
+    font-size: var(--qk-font-size-subtitle);
+    color: #333333;
+    margin-right: 5px;
+
+    &.floating {
+      position: absolute;
+      left: 12px;
+      top: -8px;
+      font-size: 12px;
+      margin-right: 0px;
+      color: #7C8187;
+      line-height: 12px;
+      background-color: var(--page-color);
+      padding: 0px 4px;
+    }
+
+    &.focused {
+      color: var(--qk-color-primary);
+    }
+
+    &.error {
+      color: var(--qk-color-danger);
+    }
+  }
+
+  .#{$classPrefix}-input {
+    display: block;
+    flex: 1;
+    color: #333333;
+    .qk-input {
+      --font-size: 16px;
+    }
+  }
+
+  .#{$classPrefix}-required {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: 3px;
+    color: var(--qk-color-danger);
+  }
+
+  .#{$classPrefix}-rightArrow {
+    color: #A9ACB0;
+  }
+}
+// 拍照组件的样式 
+.#{$classPrefix}-takePhoto {
+  padding: 1px;
+  margin-bottom: 0px;
+  border-color: transparent;
+}
+
+
+.#{$classPrefixLao} {
+  font-size: var(--qk-font-size-text);
+
+
+  .is-error {
+    border: 1px solid var(--qk-color-danger);
+  }
+  
+  .#{$classPrefixLao}-title {
+    font-weight: 500;
+    color: var(--font-title-color-dark);
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+  }
+
+  .#{$classPrefixLao}-input-container {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    .#{$classPrefixLao}-input {
+      width: 100%;
+    }
+    .#{$classPrefixLao}-mode-horizontal {
+      display: flex;
+      align-items: center;
+      &-label {
+        padding-right: 17px;
+        display: inline-block;
+      }
+      &-font-16 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .#{$classPrefixLao}-input-container-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .#{$classPrefixLao}-horizontal-margin-bottom {
+    margin-bottom: 8px;
+  }
+
+  .#{$classPrefixLao}-takephoto-container {
+    background: transparent;
+  }
+
+  .#{$classPrefixLao}-radio-container {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  .#{$classPrefixLao}-required {
+    color: var(--qk-color-danger);
+    padding-right: 5px;
+  }
+
+  .#{$classPrefixLao}-error-message {
+    color: var(--qk-color-danger);
+  }
+
+  .#{$classPrefixLao}-rightArrow {
+    color: #A9ACB0;
+  }
+}
