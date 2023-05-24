@@ -1,0 +1,82 @@
+$hd: 0.5px;
+
+@mixin row-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+:root {
+  /// 配置主题色
+  --qk-color-primary: #0c328d;
+  /// 点击下的主题色
+  --qk-color-primary-shade: #166acd;
+  --qk-color-primary-tint: #166acd;
+
+  /// 配置辅助色
+  --qk-color-secondary: #2cde73;
+  /// 点击下的辅助色
+  --qk-color-secondary-shade:#DAE6FF;
+  --qk-color-secondary-tint: #1edc6a;
+
+  // 禁用状态下的颜色
+  --qk-color-disabled: #38C384 rgba(255, 255, 255, 0.45);
+
+  /// 配置 Tabbar 样式
+  --qk-tab-bar-backgroud: #ffffff;
+  --qk-tab-bar-border-color: #e6e6e6;
+
+  /// 配置默认 Toobar 样式，一般用在导航栏
+  --qk-toolbar-background: #f7f7f7;
+  --qk-tab-bar-border-color: #efeef1;
+  --qk-toolbar-color: #121934; // 字体颜色
+
+  // 默认 dark 颜色
+  --qk-color-dark: #121934;
+  --qk-color-dark-text: #1D2129;
+  --qk-color-cancel-gray: #B0B0B0;
+  // 默认 light 颜色
+  --qk-color-light: #ffffff;
+
+  --qk-nav-font-size: 16px;
+  --qk-form-title-size: 15px;
+
+  --qk-font-size-tiny: 10px;
+  --qk-font-size-desc: 12px;
+  --qk-font-size-text: 14px;
+  --qk-font-size-subtitle: 16px;
+  --qk-font-size-title: 16px;
+
+  --qk-list-back-color: #f7f7f7;
+  --qk-border-color: #E1E4EA;
+  --qk-color-title: #333333;
+  --qk-color-danger: #ff4961;
+  --qk-color-text: #666f83;
+  --qk-color-weak: #999999;
+  --qk-color-placeholder: rgb(201, 205, 212);
+  --qk-mask-color: rgba(0, 0, 0, 0.6);
+  --qk-list-height: 40px;
+
+  --qk-core-border-color: #e9e9e9;
+  --qk-core-formItem-color: #fff;
+  --qk-core-formItem-label-color: #fff;
+  --qk-core-radio-default: #cccccc;
+  --qk-core-picker-item-color: #c5cad5;
+  --qk-core-picker-border-color: #e2e4ea;
+  --qk-core-modal-header-background: #f9fafb;
+  --qk-core-disabled: #bbb;
+
+  --qk-font-family-medium: Roboto-Medium, PingFangSC-Medium;
+}
+
+
+div.qk-px-tester {
+  --size: 1;
+  height: calc(var(--size) / 2 * 2px);
+  width: 0;
+  position: fixed;
+  right: -100vw;
+  bottom: -100vh;
+  user-select: none;
+  pointer-events: none;
+}
