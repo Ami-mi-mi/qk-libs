@@ -4,7 +4,7 @@
  * @Description: 组件库入口
  * @Date: 2023-05-24 14:31:10
  * @LastEditors: aixiaoli
- * @LastEditTime: 2023-05-24 17:30:36
+ * @LastEditTime: 2023-05-25 09:44:20
  */
 import './global.scss';
 
@@ -32,7 +32,7 @@ export { default as Button } from './components/button';
 
 export * from './components/input';
 
-export { InputUseDemo } from './components/input/demo/InputDemo';
+export { FormUseDemo } from './components/form/demo/form-use-demo';
 // export * from './components/page';
 // export * from './components/navbar';
 // export * from './components/segment';
